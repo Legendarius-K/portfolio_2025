@@ -1,7 +1,9 @@
 "use client";
 
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Navigation from "@/components/navigation";
+import Work from "@/components/work";
 import { cn } from "@/lib/classNames";
 import { useState } from "react";
 
@@ -9,7 +11,7 @@ export default function Home() {
   const [activeMenuItem, setActiveMenuItem] = useState<navigation>("about");
 
   return (
-    <main className="relative flex justify-center items-center h-full overflow-hidden">
+    <main className="flex justify-center min-h-full pt-28 md:pt-44 pb-24 ml-1">
       <Navigation
         onClick={(menuItem: string) =>
           setActiveMenuItem(menuItem as navigation)
@@ -18,33 +20,27 @@ export default function Home() {
 
       <div
         className={cn(
-          "absolute transition-transform duration-500 ease-in-out overflow-hidden",
-          activeMenuItem === "about"
-            ? "translate-x-0 opacity-100"
-            : "-translate-x-full opacity-0"
+          "",
+          activeMenuItem === "about" ? "opacity-100" : "opacity-0 hidden"
         )}
       >
         <About />
       </div>
       <div
         className={cn(
-          "absolute transition-transform duration-500 ease-in-out overflow-hidden",
-          activeMenuItem === "work"
-            ? "translate-x-0 opacity-100"
-            : "translate-x-full opacity-0"
+          "",
+          activeMenuItem === "work" ? "opacity-100" : "opacity-0 hidden"
         )}
       >
-        <About />
+        <Work />
       </div>
       <div
         className={cn(
-          "absolute transition-transform duration-500 ease-in-out overflow-hidden",
-          activeMenuItem === "contact"
-            ? "translate-y-0 opacity-100"
-            : "translate-y-full opacity-0"
+          "",
+          activeMenuItem === "contact" ? "opacity-100" : "opacity-0 hidden"
         )}
       >
-        <About />
+        <Contact />
       </div>
     </main>
   );

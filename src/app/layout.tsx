@@ -11,6 +11,9 @@ const cutiveMono = Cutive_Mono({
 export const metadata: Metadata = {
   title: "D.Kaya Portfolio",
   description: "The developer portfolio of Darius Kaya",
+  icons: {
+    icon: "./favicon.png", 
+  },
 };
 
 export default function RootLayout({
