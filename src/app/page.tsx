@@ -5,16 +5,17 @@ import Contact from "@/components/contact";
 import Navigation from "@/components/navigation";
 import Work from "@/components/work";
 import { cn } from "@/lib/classNames";
+import { NavigationType } from "@/utils/types";
 import { useState } from "react";
 
 export default function Home() {
-  const [activeMenuItem, setActiveMenuItem] = useState<navigation>("about");
+  const [activeMenuItem, setActiveMenuItem] = useState<NavigationType>("about");
 
   return (
     <main className="flex justify-center min-h-full pt-28 md:pt-44 pb-24 ml-1">
       <Navigation
         onClick={(menuItem: string) =>
-          setActiveMenuItem(menuItem as navigation)
+          setActiveMenuItem(menuItem as NavigationType)
         }
       />
 
