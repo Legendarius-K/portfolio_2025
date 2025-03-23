@@ -1,13 +1,17 @@
 "use client";
 
+import { NavigationType } from "@/utils/types";
+
+
+
 interface NavigationProps {
-  onClick: (menuItem: string) => void;
+  onClick: (menuItem: NavigationType) => void;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
-  const navItems = ["about", "work", "contact"];
+const Navigation: React.FC<NavigationProps> = ({ onClick }: NavigationProps) => {
+  const navItems = ["about", "work", "contact", "misc"];
 
-  const handleNavClick = (menuItem: string) => {
+  const handleNavClick = (menuItem: NavigationType) => {
     if (menuItem) {
       onClick(menuItem);
     }
@@ -20,7 +24,9 @@ const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
           key={item}
           className="list-none group relative w-max cursor-pointer"
         >
-          <span onClick={() => handleNavClick(item)}>{item}</span>
+          <span onClick={() => handleNavClick(item as NavigationType)}>
+            {item}
+          </span>
           <span className="absolute bottom-0 left-0 w-0 transition-all h-[1px] bg-gray-400 group-hover:w-full"></span>
         </li>
       ))}

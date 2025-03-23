@@ -35,7 +35,7 @@ const Work = () => {
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           work
         </h1>
-        <h2 className="text-xl underline decoration-[1px] decoration-gray-400">
+        <h2 className="text-xl  decoration-[1px] decoration-gray-400">
           a small selection of my projects
         </h2>
       </div>

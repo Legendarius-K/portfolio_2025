@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
   const [mailtoLink, setMailtoLink] = useState("");
@@ -18,7 +19,7 @@ const Contact = () => {
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           contact
         </h1>
-        <h2 className="text-xl underline decoration-[1px] decoration-gray-400">
+        <h2 className="text-xl decoration-[1px] decoration-gray-400">
           i'd love to get in touch
         </h2>
       </div>
@@ -30,7 +31,6 @@ const Contact = () => {
         <CiLinkedin className="text-5xl text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">LinkedIn</h3>
       </Link>
-      {/* Only render the email link after it's been built */}
       {mailtoLink && (
         <Link
           href={mailtoLink}
@@ -41,6 +41,14 @@ const Contact = () => {
           <h3 className="text-xl">E-mail</h3>
         </Link>
       )}
+      <Link
+        href="https://github.com/Legendarius-K"
+        className="group flex items-center gap-4 cursor-pointer"
+        target="_blank"
+      >
+        <FaGithub className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <h3 className="text-xl">GitHub</h3>
+      </Link>
     </section>
   );
 };

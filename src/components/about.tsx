@@ -5,7 +5,7 @@ const About = () => {
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           darius kaya
         </h1>
-        <h2 className="text-xl underline decoration-[1px] decoration-gray-400">
+        <h2 className="text-xl  decoration-[1px] decoration-gray-400">
           frontend developer
         </h2>
       </div>
