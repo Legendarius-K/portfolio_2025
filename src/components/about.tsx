@@ -10,10 +10,9 @@ const About = () => {
         </h2>
       </div>
       <p className="text-gray-600">
-        I’m a frontend developer proficient in React, Next.js, TypeScript,
-        and React Native. I love building scalable, responsive, and
-        user-friendly applications with an eye for detail and performance
-        optimization.
+        I’m a frontend developer proficient in React, Next.js, TypeScript, and
+        React Native. I love building scalable, responsive, and user-friendly
+        applications with an eye for detail and performance optimization.
       </p>
       <p className="text-gray-600">
         Currently, I’m developing Nenda’s customer portal app, where I manage

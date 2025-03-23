@@ -2,18 +2,15 @@ import Link from "next/link";
 import { AiOutlineSpotify } from "react-icons/ai";
 import { IoMicCircleOutline } from "react-icons/io5";
 
-
-
 const Misc = () => {
-
   return (
     <section className="max-w-[500px] mx-auto flex flex-col gap-4 border-l-[1px] border-gray-400 pl-4">
       <div>
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           misc
         </h1>
-        <h2 className="text-xl  decoration-[1px] decoration-gray-400">
-          i side hustle as a voice over artist, and I used to work full time as
+        <h2 className="text-xl decoration-[1px] decoration-gray-400">
+          i side hustle as a voice over artist, and i used to work full time as
           a music producer. here are a few of my creations.
         </h2>
       </div>
@@ -58,12 +55,13 @@ const Misc = () => {
         <h3 className="text-xl">A commercial for Nasonex</h3>
       </Link>
       <Link
-        href="https://www.youtube.com/watch?v=chNFKmjvlio&t=28s"
+        href="https://youtu.be/chNFKmjvlio?si=FemEh4sCYSn_DjRM&t=48"
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
         <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
-        <h3 className="text-xl">A trailer for Disney Pixar's Lightyear</h3>
+        {/* Escape the apostrophe in "Disney Pixar's" */}
+        <h3 className="text-xl">A trailer for Disney Pixar&apos;s Lightyear</h3>
       </Link>
     </section>
   );

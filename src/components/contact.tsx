@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CiLinkedin } from "react-icons/ci";
@@ -10,7 +12,8 @@ const Contact = () => {
   useEffect(() => {
     const emailUser = "darius.kaya";
     const emailDomain = "gmail.com";
-    setMailtoLink(`mailto:${emailUser}[$€¢]${emailDomain}`);
+    // Use a proper "@" symbol instead of an obfuscated string
+    setMailtoLink(`mailto:${emailUser}@${emailDomain}`);
   }, []);
 
   return (
@@ -19,8 +22,9 @@ const Contact = () => {
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           contact
         </h1>
+        {/* Escape the apostrophe */}
         <h2 className="text-xl decoration-[1px] decoration-gray-400">
-          i'd love to get in touch
+          i&apos;d love to get in touch
         </h2>
       </div>
       <Link
