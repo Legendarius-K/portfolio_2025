@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cutiveMono.variable} h-[100vh]`}>
-      <body className="box-border m-0 p-0 h-full font-mono">{children}</body>
+      <body className="box-border m-0 p-0 h-full font-mono bg-[#FAFAF5]">
+        {children}
+      </body>
     </html>
   );
 }
