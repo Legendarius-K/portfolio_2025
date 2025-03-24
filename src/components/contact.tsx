@@ -12,8 +12,7 @@ const Contact = () => {
   useEffect(() => {
     const emailUser = "darius.kaya";
     const emailDomain = "gmail.com";
-    // Use a proper "@" symbol instead of an obfuscated string
-    setMailtoLink(`mailto:${emailUser}@${emailDomain}`);
+    setMailtoLink(`mailto:${emailUser}[$€¢]${emailDomain}`);
   }, []);
 
   return (
@@ -22,7 +21,6 @@ const Contact = () => {
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           contact
         </h1>
-        {/* Escape the apostrophe */}
         <h2 className="text-xl decoration-[1px] decoration-gray-400">
           i&apos;d love to get in touch
         </h2>

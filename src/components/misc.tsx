@@ -60,7 +60,6 @@ const Misc = () => {
         target="_blank"
       >
         <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
-        {/* Escape the apostrophe in "Disney Pixar's" */}
         <h3 className="text-xl">A trailer for Disney Pixar&apos;s Lightyear</h3>
       </Link>
     </section>

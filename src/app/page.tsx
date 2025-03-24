@@ -26,7 +26,7 @@ export default function Home() {
           activeMenuItem === "about" ? "opacity-100" : "opacity-0 hidden"
         )}
       >
-        <About />
+        <About onClick={() => setActiveMenuItem('contact')}/>
       </div>
       <div
         className={cn(

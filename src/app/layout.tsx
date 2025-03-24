@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "D.Kaya Portfolio",
   description: "The developer portfolio of Darius Kaya",
   icons: {
-    icon: "./favicon.png", 
+    icon: "./favicon.ico", 
   },
 };
 
