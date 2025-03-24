@@ -19,7 +19,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <AiOutlineSpotify className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <AiOutlineSpotify className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A few of my songs</h3>
       </Link>
       <Link
@@ -27,7 +27,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <IoMicCircleOutline className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A commercial for Barilla</h3>
       </Link>
       <Link
@@ -35,7 +35,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <IoMicCircleOutline className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A commercial for Storytel</h3>
       </Link>
       <Link
@@ -43,7 +43,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <IoMicCircleOutline className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A commercial for Haupt Lakrits</h3>
       </Link>
       <Link
@@ -51,7 +51,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <IoMicCircleOutline className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A commercial for Nasonex</h3>
       </Link>
       <Link
@@ -59,7 +59,7 @@ const Misc = () => {
         className="group flex items-center gap-4 cursor-pointer"
         target="_blank"
       >
-        <IoMicCircleOutline className="text-5xl text-gray-400 group-hover:text-gray-500" />
+        <IoMicCircleOutline className="text-5xl min-w-[48px] text-gray-400 group-hover:text-gray-500" />
         <h3 className="text-xl">A trailer for Disney Pixar&apos;s Lightyear</h3>
       </Link>
     </section>
