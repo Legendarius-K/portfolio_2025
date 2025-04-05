@@ -28,9 +28,9 @@ const WorkItem = ({
   );
 };
 
-const Work = () => {
+export default function Work() {
   return (
-    <section className="max-w-[500px] mx-auto flex flex-col gap-4 border-l-[1px] border-gray-400 pl-4 pb-20">
+    <section className="max-w-[500px] mx-auto flex flex-col gap-4 border-l-[1px] border-gray-400 pl-4">
       <div>
         <h1 className="text-2xl underline decoration-[1px] decoration-gray-400">
           work
@@ -51,6 +51,4 @@ const Work = () => {
       ))}
     </section>
   );
-};
-
-export default Work;
+}

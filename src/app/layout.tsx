@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cutive_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/navigation";
 
 const cutiveMono = Cutive_Mono({
   variable: "--font-cutive-mono",
@@ -23,7 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cutiveMono.variable} h-[100vh]`}>
-      <body className="box-border m-0 p-0 h-full font-mono bg-[#fafaf8]">
+      <body className="box-border flex justify-center m-0 pt-28 md:pt-44 pb-24 px-1 min-h-full font-mono bg-[#fafaf8]">
+        <Navigation />
         {children}
       </body>
     </html>
