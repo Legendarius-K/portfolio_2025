@@ -1,15 +1,8 @@
 "use client";
 
-import { NavigationType } from "@/utils/types";
 import Link from "next/link";
 
-
-
-interface NavigationProps {
-  // onClick: (menuItem: NavigationType) => void;
-}
-
-const Navigation: React.FC<NavigationProps> = ({  }: NavigationProps) => {
+const Navigation = () => {
   const navItems = [
     { name: "about", path: "/" },
     { name: "work", path: "/work" },
@@ -17,11 +10,6 @@ const Navigation: React.FC<NavigationProps> = ({  }: NavigationProps) => {
     { name: "misc", path: "/misc" },
   ];
 
-  // const handleNavClick = (menuItem: NavigationType) => {
-  //   if (menuItem) {
-  //     onClick(menuItem);
-  //   }
-  // };
   return (
     <nav className="absolute top-5 md:top-10 w-[96%] md:w-[500px] border-[1px] border-gray-400 rounded-full px-6 py-2 flex justify-between text-xl">
       {navItems.map((item) => (

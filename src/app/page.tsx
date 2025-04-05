@@ -1,17 +1,9 @@
 "use client";
 
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Misc from "@/components/misc";
-import Navigation from "@/components/navigation";
-import Work from "@/components/work";
-import { cn } from "@/lib/classNames";
-import { NavigationType } from "@/utils/types";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
-  const [activeMenuItem, setActiveMenuItem] = useState<NavigationType>("about");
+  // const [activeMenuItem, setActiveMenuItem] = useState<NavigationType>("about");
 
   return (
     <main className="">
